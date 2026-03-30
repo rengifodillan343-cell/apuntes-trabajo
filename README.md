@@ -160,3 +160,166 @@ Si quieres, compae, te hago una versión:
 📄 “mini acordeón de 1 hoja” para copiar literal
 
 o te hago otro caso más difícil pa que quedes fino 😈
+📘 🧠 DEFINICIONES + CÓDIGO
+🔹 1. VARIABLES Y TIPOS DE DATOS
+📌 Definición:
+
+Una variable es un espacio donde guardas información.
+
+📌 Tipos:
+int → enteros
+float → decimales
+str → texto
+bool → verdadero/falso
+✅ Código:
+nombre = "Juan"     # string
+edad = 18           # int
+precio = 10.5       # float
+activo = True       # boolean
+🔹 2. OPERADORES
+📌 Definición:
+
+Sirven para hacer cálculos y comparaciones.
+
+📌 Tipos:
+Aritméticos: + - * /
+Comparación: == != > <
+Lógicos: and or not
+✅ Código:
+if edad >= 18 and activo:
+    print("Puede entrar")
+🔹 3. ESTRUCTURAS DE CONTROL
+🔸 CONDICIONALES
+📌 Definición:
+
+Permiten tomar decisiones.
+
+✅ Código:
+if edad >= 18:
+    print("Mayor de edad")
+elif edad == 17:
+    print("Casi")
+else:
+    print("Menor")
+🔸 BUCLES
+📌 Definición:
+
+Repiten código varias veces.
+
+🔹 WHILE
+while True:
+    opcion = input("Elige: ")
+    if opcion == "4":
+        break
+🔹 FOR
+for i in range(5):
+    print(i)
+🔹 4. FUNCIONES
+📌 Definición:
+
+Bloques de código reutilizables.
+
+✅ Código:
+def saludar():
+    print("Hola")
+
+saludar()
+🔹 Con parámetros
+def suma(a, b):
+    return a + b
+🔹 Lambda (simple)
+suma = lambda a, b: a + b
+🔹 5. ESTRUCTURAS DE DATOS
+🔸 LISTAS
+📌 Definición:
+
+Guardan varios datos.
+
+datos = []
+datos.append("Juan")
+
+for d in datos:
+    print(d)
+🔸 TUPLAS
+📌 Definición:
+
+Como listas pero no cambian.
+
+tupla = ("Juan", 20)
+print(tupla[0])
+🔸 DICCIONARIOS
+📌 Definición:
+
+Guardan datos con clave y valor.
+
+persona = {
+    "nombre": "Juan",
+    "edad": 20
+}
+🔹 6. MANEJO DE ERRORES
+📌 Definición:
+
+Evita que el programa se rompa.
+
+try:
+    edad = int(input("Edad: "))
+except:
+    print("Error")
+🔹 7. BUENAS PRÁCTICAS
+📌 Definición:
+
+Forma correcta de organizar el código.
+
+✔ usar funciones
+✔ comentar
+✔ separar lógica
+
+# función para agregar
+def agregar():
+    pass
+🧪 CÓMO APLICAR TODO (EJEMPLO REAL)
+datos = []
+
+def agregar():
+    try:
+        nombre = input("Nombre: ")
+        edad = int(input("Edad: "))
+    except:
+        print("Error")
+        return
+
+    persona = {"nombre": nombre, "edad": edad}
+    datos.append(persona)
+
+def mostrar():
+    for p in datos:
+        print(p["nombre"], p["edad"])
+
+while True:
+    print("1. Agregar")
+    print("2. Mostrar")
+    print("3. Salir")
+
+    opcion = input("Elige: ")
+
+    if opcion == "1":
+        agregar()
+    elif opcion == "2":
+        mostrar()
+    elif opcion == "3":
+        break
+🧠 RESUMEN ULTRA RÁPIDO (POR SI TE PREGUNTAN)
+Variable → guarda datos
+If → toma decisiones
+While → repite
+Función → organiza código
+Lista → guarda muchos datos
+Diccionario → datos con nombre
+Try/except → evita errores
+🚀 CONSEJO FINAL
+
+Si te preguntan teoría:
+👉 responde definición + ejemplo corto
+
+Si te ponen código:
+👉 usa menú + funciones + lista
