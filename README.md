@@ -256,7 +256,116 @@ display: flex;
 
 HTML crea la estructura.
 CSS organiza y da diseño.
+apunte--------------------////////////////////////////////////////////--------------------------------------------------------------/////////////////////////////////
+✨ 1) Íconos flotantes / elementos decorativos
 
+Una forma fácil es usar círculos flotando en el fondo.
+
+HTML
+
+Pon esto dentro del <body>, preferiblemente arriba:
+
+<div class="decoracion"></div>
+<div class="decoracion decoracion2"></div>
+<div class="decoracion decoracion3"></div>
+CSS
+.decoracion{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    top: 100px;
+    left: 50px;
+    animation: flotar 4s infinite ease-in-out;
+}
+
+.decoracion2{
+    top: 300px;
+    left: 80%;
+    width: 70px;
+    height: 70px;
+}
+
+.decoracion3{
+    top: 500px;
+    left: 20%;
+    width: 120px;
+    height: 120px;
+}
+🎥 2) Animación flotante
+
+Esto hace que suban y bajen.
+
+@keyframes flotar{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+🧠 Cómo funciona
+position: fixed
+
+Lo deja fijo en la pantalla.
+
+position: fixed;
+border-radius: 50%
+
+Lo vuelve círculo.
+
+border-radius: 50%;
+animation
+
+Le aplica movimiento.
+
+animation: flotar 4s infinite;
+flotar = nombre de la animación
+4s = dura 4 segundos
+infinite = nunca para
+🌟 3) Sombra bonita en tarjetas
+.card{
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    border-radius: 15px;
+}
+Explicación
+box-shadow
+
+Sombra.
+
+box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+
+Hace que se vea elegante.
+
+🎯 4) Efecto hover en botones
+button:hover{
+    transform: scale(1.1);
+}
+
+Cuando pasas el mouse, el botón crece.
+
+💎 5) Borde brillante
+img{
+    border: 3px solid white;
+    border-radius: 10px;
+}
+🔥 Consejo
+
+Si quieres que se vea moderno tipo tienda, usa:
+
+sombras
+bordes redondos
+hover
+círculos flotantes
+
+Eso impresiona mucho en pruebas 👌
+
+Si quieres, te hago una 
+plantilla completa con todas estas decoraciones ya puc
 
 
 
