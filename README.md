@@ -1,71 +1,89 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Sabor Gourmet</title>
 
-/* Barra superior */
-nav{
-    background-color: black;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
+    <!-- Conecta el CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+    <!-- Barra de navegación -->
+    <nav>
+        <h1>Sabor Gourmet</h1>
 
-nav a{
-    color: white;
-    text-decoration: none;
-}
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-/* Secciones */
-section{
-    padding: 40px;
-}
+    <!-- Sección inicio -->
+    <section id="inicio">
+        <h2>Bienvenido a Sabor Gourmet</h2>
+        <p>
+            Disfruta de los mejores platos, postres y bebidas
+            en un ambiente único.
+        </p>
+    </section>
 
-/* Cards del menú */
-.platos{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+    <!-- Sección menú -->
+    <section id="menu">
+        <h2>Nuestro Menú</h2>
 
-.card{
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-}
+        <div class="platos">
+            <div class="card">
+                <img src="https://via.placeholder.com/250" alt="Hamburguesa">
+                <h3>Hamburguesa Especial</h3>
+                <p>$18.000</p>
+            </div>
 
-.card img{
-    width: 100%;
-}
+            <div class="card">
+                <img src="https://via.placeholder.com/250" alt="Pizza">
+                <h3>Pizza Italiana</h3>
+                <p>$25.000</p>
+            </div>
 
-/* Formulario */
-input, textarea{
-    display: block;
-    margin: 10px auto;
-    width: 300px;
-    padding: 10px;
-}
+            <div class="card">
+                <img src="https://via.placeholder.com/250" alt="Pasta">
+                <h3>Pasta Alfredo</h3>
+                <p>$20.000</p>
+            </div>
+        </div>
+    </section>
 
-button{
-    padding: 10px 20px;
-}
+    <!-- Sección galería -->
+    <section id="galeria">
+        <h2>Galería</h2>
 
-/* Footer */
-footer{
-    background-color: black;
-    color: white;
-    padding: 15px;
-}
+        <img src="https://via.placeholder.com/300" alt="Restaurante">
+        <img src="https://via.placeholder.com/300" alt="Comida">
+        <img src="https://via.placeholder.com/300" alt="Postre">
+    </section>
+
+    <!-- Formulario contacto -->
+    <section id="contacto">
+        <h2>Reserva tu mesa</h2>
+
+        <form>
+            <input type="text" placeholder="Tu nombre">
+            <input type="email" placeholder="Tu correo">
+            <textarea placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 Sabor Gourmet - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
 
 
 CSS---------------------//////--------------------------------------------------------////////////////------------------------------------------------------------
